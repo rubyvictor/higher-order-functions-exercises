@@ -1,7 +1,7 @@
 // Check to see if any of the elements in the
 // array are numbers greater than 10.
 function anyGreaterThan10(input) {
-  return input.some(x => x> 10);
+  return input.some(x => x > 10);
 }
 
 // Check to see if any of the strings in

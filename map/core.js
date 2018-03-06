@@ -3,7 +3,9 @@ function multiplyBy10(array) {
 }
 
 function onlyVowels(array) {
-  return array.filter(element => element.includes("a","e","i","o","u") === true);
+  return array.filter(
+    element => element.includes("a", "e", "i", "o", "u") === true
+  );
 }
 
 function doubleMatrix(array) {
