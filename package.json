@@ -6,6 +6,7 @@
     "test": "test"
   },
   "scripts": {
+    "test": "jest",
     "test:watch": "jest --watch"
   },
   "repository": {
@@ -15,6 +16,9 @@
   "author": "Wes Reid",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^22.1.4"
+    "jest": "^22.4.2"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0"
   }
 }

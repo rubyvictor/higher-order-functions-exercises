@@ -1,9 +1,9 @@
 function onlyEven(array) {
-  return array;
+  return array.filter(element => element % 2 === 0);
 }
 
 function onlyOneWord(array) {
-  return array;
+  return array.filter(element => element.includes(" ") === false);
 }
 
 function positiveRowsOnly(array) {
@@ -11,7 +11,7 @@ function positiveRowsOnly(array) {
 }
 
 function truthyValuesOnly(array) {
-  return array;
+  return array.filter(Boolean);
 }
 
 module.exports = {
