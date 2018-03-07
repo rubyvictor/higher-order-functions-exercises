@@ -23,11 +23,13 @@ function productAll(inputMatrix) {
 }
 
 function luckyNumbers(array) {
-  
-  const reducer = (accumulator,currentValue) => {
-return accumulator.join(",");
+  var str = "Your lucky numbers are: ";
+
+  const reducer = (a,b) => {
+return a + b + ", ";
   };
-  return array.reduce(reducer,'Your luck numbers are:');
+
+  return array.reduce(reducer,str).trim().slice(0,-1) +'.';
 }
 
 module.exports = {
