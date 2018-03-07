@@ -1,18 +1,22 @@
 function multiplyBy10(array) {
-  return array.map(x => x * 10);
+  return array.map(element => element * 10);
 }
 
 function onlyVowels(array) {
-  return array.map(element => element.match(/[aeiou]/gi) || []);
-  return array.map(element => element.split("a").join('').split("e").join('').split("i").join("").split("o").join("").split("u").join(""));
+  return array.map(word =>
+    word
+      .split("")
+      .filter(char => "aeiou".includes(char))
+      .join("")
+  );
 }
 
-function doubleMatrix(array) {
-  return array.map((element,index,array) => element * 2);
+function doubleMatrix(arrayMatrix) {
+  return arrayMatrix.map(row => row.map(element => element * 2));
 }
 
 function onlyNames(array) {
-  return array.map(x  => x["name"]);
+  return array.map(obj => obj["name"]);
 }
 
 module.exports = {

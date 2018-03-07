@@ -1,17 +1,21 @@
 function onlyEven(array) {
-  return array.filter(element => element % 2 === 0);
+  return array.filter(num => num % 2 === 0);
 }
 
 function onlyOneWord(array) {
-  return array.filter(element => element.includes(" ") === false);
+  return array.filter(word => word.includes(" ") === false);
 }
 
-function positiveRowsOnly(array) {
-  return array; //(hint: use Array.prototype.some())
+function positiveRowsOnly(inputMatrix) {
+  const positiveRow = function (row){
+return row.every(element => element >= 0);
+  };
+  return inputMatrix.filter(positiveRow);
 }
 
+// use ternary to return true or false
 function truthyValuesOnly(array) {
-  return array.filter(Boolean);
+  return array.filter(element => element ? true : false);
 }
 
 module.exports = {

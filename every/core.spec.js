@@ -1,7 +1,7 @@
 var core = require("./core");
 
 describe("core", function() {
-  it.skip("#allEven", function() {
+  it("#allEven", function() {
     var goodInput = [2, 4, 10];
     expect(core.allEven(goodInput)).toEqual(true);
 
