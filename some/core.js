@@ -13,9 +13,9 @@ function longWord(array) {
 // Check to see if any of the elements in
 // the matrix are true.
 function truePossibilities(inputMatrix) {
-  const isTrue = function(row){
-    return row.some(element => element ? true: false);
-  }
+  const isTrue = function(row) {
+    return row.some(element => (element ? true : false));
+  };
   return inputMatrix.some(isTrue);
   //OR arrow function:
   // return input.some(row => row.some(element => element === true));

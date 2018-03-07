@@ -13,7 +13,7 @@
 function reverse(str) {
   if (str.length > 1) {
     const length = str.length;
-    newStr = str.slice(-1) + reverse(str.slice(0,-1));
+    newStr = str.slice(-1) + reverse(str.slice(0, -1));
     return newStr;
   }
   return str;
