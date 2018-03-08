@@ -11,6 +11,7 @@ function positiveRowsOnly(inputMatrix) {
 return row.every(element => element >= 0);
   };
   return inputMatrix.filter(positiveRow);
+  // you should indent your code properly. otherwise, it makes it hard to read
 }
 
 // use ternary to return true or false
